@@ -1,0 +1,304 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 65px; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #001f3f;
+    font-weight: 700;
+}
+
+header {
+    background-color: #001f3f; 
+    color: white;
+    padding: 1.2em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+    
+    transition: transform 0.3s ease-in-out; 
+}
+
+header.scrolled-down {
+    transform: translateY(-100%); 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white; 
+    background: none; 
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+#hero {
+    background: url('/foto/LzOPHjryKibPeQk.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); 
+}
+
+#hero h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px; 
+    margin-top: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 153, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+    transform: translateY(-1px);
+}
+
+/* 4. FILTER & PRODUK */
+.filter-controls {
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#category-filter {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: contain; 
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #f0f0f0; 
+    padding: 10px;
+}
+
+.add-to-cart {
+    background-color: #0074d9; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.add-to-cart:hover {
+    background-color: #005bb5;
+}
+
+#keranjang, #payment, #contact {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#keranjang h2, #payment h2, #contact h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+
+.total-cart-display {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #001f3f;
+    padding-top: 10px;
+    border-top: 2px solid #ff9900;
+}
+
+.payment-option {
+    border: 1px solid #ddd;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.payment-option h4 {
+    margin-top: 0;
+    color: #0074d9; 
+    font-size: 1.1em;
+}
+
+.payment-note {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #d9534f;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 2.5em;
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.fa-whatsapp {
+    color: #25D366; 
+}
+.fa-instagram {
+    color: #E1306C; 
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+    
+    #hero {
+        padding: 50px 10px;
+        font-size: 0.9em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; 
+    }
+}

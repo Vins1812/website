@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersey Corner - Toko Jersey Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Jersey Corner</h1>
+            <nav>
+                <a href="#hero">Home</a> 
+                <a href="#produk">Produk</a>
+                <a href="#contact">Kontak</a> 
+                <a href="#keranjang">Keranjang (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="hero">
+            <h2>Koleksi Jersey Terbaru & Terlengkap</h2>
+            <p>Dapatkan jersey klub dan tim nasional favorit Anda dengan kualitas terbaik!</p>
+            <a href="#produk" class="cta-button">Lihat Produk</a>
+        </section>
+
+        <section id="produk">
+            <h2>Semua Jersey</h2>
+            <div class="filter-controls">
+                <label for="category-filter">Filter Kategori:</label>
+                <select id="category-filter">
+                    <option value="all">Semua Kategori</option>
+                    <option value="club">Klub Eropa & Retro</option>
+                    <option value="national">Tim Nasional</option>
+                </select>
+            </div>
+            
+            <div class="product-grid" id="product-list">
+                
+                <div class="product-card" data-category="club" data-id="1">
+                    <img src="/foto/man-utd-25-26-home-kit (21).jpg" alt="Jersey Home Manchester United 2024/25"> 
+                    <h3 data-name>Jersey Home Manchester United 2026/26</h3>
+                    <p>Tim: MU</p> 
+                    <p>Rp <span data-price="1200000">1.200.000</span></p>
+                    <button class="add-to-cart" data-product-id="1">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="1">
+                    <img src="/foto/3rd.jpg" alt="Jersey Manchester United 3rd kit 2025/2026"> 
+                    <h3 data-name>JJersey Manchester United 3rd kit 2025/26</h3>
+                    <p>Tim: MU</p> 
+                    <p>Rp <span data-price="1200000">1.200.000</span></p>
+                    <button class="add-to-cart" data-product-id="1">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="2">
+                    <img src="/foto/adidas_real_madrid_24-25_home_jersey_iu5011_-_20242_full01_eql55pv2.webp" alt="Jersey Home Real Madrid 2024/25">
+                    <h3 data-name>Jersey Home Real Madrid 2024/25</h3>
+                    <p>Tim: Real Madrid</p> 
+                    <p>Rp <span data-price="1150000">1.150.000</span></p>
+                    <button class="add-to-cart" data-product-id="2">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="3">
+                    <img src="/foto/lDVePQyejcHKfMB.jpg" alt="Jersey Away FC Barcelona 2024/25">
+                    <h3 data-name>Jersey Away FC Barcelona 2024/25</h3>
+                    <p>Tim: Barcelona</p> 
+                    <p>Rp <span data-price="1100000">1.100.000</span></p>
+                    <button class="add-to-cart" data-product-id="3">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="4">
+                    <img src="/foto/23_ss4_p-13303224pv-1u-h9stclbi9luyul46y97cv-a8b337a9307544e78ed239ea6588c1dc-600x600.jpg" alt="Jersey Home PSG 2024/25">
+                    <h3 data-name>Jersey Home Paris Saint-Germain (PSG) 2024/25</h3>
+                    <p>Tim: PSG</p> 
+                    <p>Rp <span data-price="1300000">1.300.000</span></p>
+                    <button class="add-to-cart" data-product-id="4">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="5">
+                    <img src="/foto/tm6351-071_1.webp" alt="Jersey Home Feyenoord 2024/25">
+                    <h3 data-name>Jersey Home Feyenoord 2024/25</h3>
+                    <p>Tim: Feyenoord</p> 
+                    <p>Rp <span data-price="900000">900.000</span></p>
+                    <button class="add-to-cart" data-product-id="5">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="6">
+                    <img src="/foto/lWljBTauQpZczG4.jpg" alt="Jersey Home Liverpool 2024/25">
+                    <h3 data-name>Jersey Home Liverpool FC 2024/25</h3>
+                    <p>Tim: Liverpool</p> 
+                    <p>Rp <span data-price="1180000">1.180.000</span></p>
+                    <button class="add-to-cart" data-product-id="6">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="6">
+                    <img src="/foto/jersey_manchester_united_19989_1724625486_d552301e_progressive.jpg" alt="Jersey Retro Manchester United 1998/1999">
+                    <h3 data-name>Jersey Retro Manchester United 1998/1999</h3>
+                    <p>Tim: MU</p> 
+                    <p>Rp <span data-price="1180000">1.180.000</span></p>
+                    <button class="add-to-cart" data-product-id="6">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="6">
+                    <img src="/foto/minero.jpg" alt="Jersey Atlético Mineiro 2025/2026">
+                    <h3 data-name>Jersey Atlético Mineiro 2025/2026</h3>
+                    <p>Tim: Atlético Mineiro</p> 
+                    <p>Rp <span data-price="1180000">1.000.000</span></p>
+                    <button class="add-to-cart" data-product-id="6">Tambah ke Keranjang</button>
+                </div>
+                
+                <div class="product-card" data-category="club" data-id="8">
+                    <img src="/foto/IT6168_b2b012_plp.png_clipped_rev_1.webp" alt="Jersey Home Ajax Amsterdam 2024/25">
+                    <h3 data-name>Jersey Home Ajax Amsterdam 2024/25</h3>
+                    <p>Tim: Ajax</p> 
+                    <p>Rp <span data-price="950000">950.000</span></p>
+                    <button class="add-to-cart" data-product-id="8">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="9">
+                    <img src="/foto/IT8511_HM30.avif" alt="Jersey Away Bayern Munich 2024/25">
+                    <h3 data-name>Jersey Away Bayern Munich 2024/25</h3>
+                    <p>Tim: Bayern Munchen</p> 
+                    <p>Rp <span data-price="1090000">1.090.000</span></p>
+                    <button class="add-to-cart" data-product-id="9">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="club" data-id="10">
+                    <img src="/foto/JrUhieLacuuk1vp.jpg" alt="Jersey Retro AC Milan 1999/00">
+                    <h3 data-name>Jersey Retro AC Milan 1999/00</h3>
+                    <p>Tim: AC Milan Retro</p> 
+                    <p>Rp <span data-price="650000">650.000</span></p>
+                    <button class="add-to-cart" data-product-id="10">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="national" data-id="11">
+                    <img src="/foto/LzOPHjryKibPeQk.jpg" alt="Jersey Home Timnas Indonesia 2024">
+                    <h3 data-name>Jersey Home Timnas Indonesia 2024 (Replica)</h3>
+                    <p>Tim: Timnas Indo</p> 
+                    <p>Rp <span data-price="750000">750.000</span></p>
+                    <button class="add-to-cart" data-product-id="11">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="national" data-id="12">
+                    <img src="/foto/7f5e63a3ddf6755ddea1dc14d016c4e3893d2c9db7912255a30589fa92476fba.jpg" alt="Jersey Home Timnas Brazil 2024">
+                    <h3 data-name>Jersey Home Timnas Brazil 2024</h3>
+                    <p>Tim: Brazil</p> 
+                    <p>Rp <span data-price="1050000">1.050.000</span></p>
+                    <button class="add-to-cart" data-product-id="12">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-category="national" data-id="13">
+                    <img src="/foto/01-ADIDAS-AOAJYADI5-ADIIP8409-White.webp" alt="Jersey Away Timnas Argentina 2024">
+                    <h3 data-name>Jersey Away Timnas Argentina 2024</h3>
+                    <p>Tim: Argentina</p> 
+                    <p>Rp <span data-price="1000000">1.000.000</span></p>
+                    <button class="add-to-cart" data-product-id="13">Tambah ke Keranjang</button>
+                </div>
+
+            </div>
+            </section>
+
+        <section id="keranjang" class="hidden">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items">
+                </ul>
+            <p class="total-cart-display">Total: **Rp <span id="cart-total">0</span>**</p>
+            <button id="checkout-button" class="cta-button">Lanjutkan ke Pembayaran</button>
+        </section>
+
+        <section id="payment" class="hidden">
+            <h2>Langkah Pembayaran (Transfer Manual)</h2>
+            <div class="payment-steps">
+                <p>Total Pembayaran Anda: **Rp <span id="payment-total-display">0</span>**</p>
+                <p>Silakan pilih metode transfer di bawah ini:</p>
+
+                <div class="payment-option">
+                    <h4>💳 Transfer Bank BCA</h4>
+                    <p>Nomor Rekening: **1234567890**</p>
+                    <p>Atas Nama: PT. Jersey Corner Indonesia</p>
+                </div>
+                
+                <div class="payment-option">
+                    <h4>💰 Transfer Bank Mandiri</h4>
+                    <p>Nomor Rekening: **0987654321**</p>
+                    <p>Atas Nama: PT. Jersey Corner Indonesia</p>
+                </div>
+
+                <div class="payment-option">
+                    <h4>📱 E-Wallet (OVO/Gopay)</h4>
+                    <p>Nomor HP/Akun: **085777760460** (Admin)</p>
+                </div>
+
+                <p class="payment-note">**Penting:** Harap transfer sesuai total tagihan. Konfirmasi pembayaran Anda via WhatsApp ke 085777760460.</p>
+                <a href="#contact" class="cta-button">Konfirmasi Pembayaran</a>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden"> 
+            <h2>Hubungi Kami</h2>
+            <div class="contact-info">
+                <p>📞 **Telepon/WhatsApp:** +62 857 7776 0460</p>
+                <p>📧 **Email:** info@jerseycorner.com</p>
+                <p>📍 **Alamat Toko:** Jl. Garuda No. 10, Jakarta Selatan, Indonesia</p>
+            </div>
+
+            <h3>Kirim Pesan</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda..." rows="4" required></textarea>
+                <button type="submit" class="cta-button">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://wa.me/6285777760460" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/jerseycorner_official" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Jersey Corner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
